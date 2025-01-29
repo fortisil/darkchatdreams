@@ -72,7 +72,7 @@ export const ConversationSidebar = ({ currentSessionId, onSelectSession }: Conve
               key={conv.session_id}
               variant={currentSessionId === conv.session_id ? "secondary" : "ghost"}
               className={cn(
-                "w-full justify-start",
+                "w-full justify-start bg-secondary text-secondary-foreground hover:bg-secondary/80",
                 isCollapsed && "justify-center"
               )}
               onClick={() => onSelectSession(conv.session_id)}

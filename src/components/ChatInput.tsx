@@ -34,7 +34,7 @@ export const ChatInput = ({ onSend, disabled }: ChatInputProps) => {
           onChange={(e) => setMessage(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Type a message..."
-          className="min-h-[60px] max-h-[200px]"
+          className="min-h-[60px] max-h-[200px] text-black"
           disabled={disabled}
         />
         <Button type="submit" size="icon" disabled={disabled || !message.trim()}>
